@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Electrical Safety Data Sheet</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+</head>
+<body>
+  <header>
+    <h1><i class="fas fa-bolt"></i> OSHA Electrical Safety SDS</h1>
+    <p>Based on OSHA Standard 1926.431</p>
+  </header>
+
+  <main>
+    <section class="hazards">
+      <h2><i class="fas fa-exclamation-triangle"></i> Key Hazards</h2>
+      <ul>
+        <li><i class="fas fa-bolt"></i> Electrical Shock</li>
+        <li><i class="fas fa-fire"></i> Fire Risk</li>
+        <li><i class="fas fa-running"></i> Tripping Hazard</li>
+        <li><i class="fas fa-ring"></i> Jewellery Conduction Risk</li>
+      </ul>
+    </section>
+
+    <section class="accordion">
+      <button class="accordion-toggle">OSHA 1926.431 Standard Summary</button>
+      <div class="accordion-content">
+        <p>OSHA 1926.431 outlines safety requirements for electrical installations, use of equipment, insulation standards, and handling procedures. All equipment must be properly maintained and free of recognized hazards likely to cause death or serious physical harm.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Electrical SDS Page by Kofi Quartey</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.accordion-toggle');
+    const content = document.querySelector('.accordion-content');
+    toggle.addEventListener('click', () => {
+      content.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
